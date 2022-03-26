@@ -48,13 +48,6 @@ const Header = () => {
           transformOrigin={{ horizontal: "right", vertical: "top" }}
           anchorOrigin={{ horizontal: "right", vertical: "top" }}
         >
-          <MenuItem>
-            <ListItemIcon>
-              <CgProfile fontSize="20px" />
-            </ListItemIcon>
-            Profile
-          </MenuItem>
-          <Divider />
           <MenuItem
             onClick={() =>
               logout({
