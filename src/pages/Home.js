@@ -71,13 +71,13 @@ const Home = () => {
     <div className="flex-1 pt-[60px] flex flex-col">
       <ChatHeader />
       <ScrollToBottom className={ROOT_CSS}>
-        <FlipMove className="flex flex-col gap-y-3">
+        <div className="flex flex-col gap-y-3">
           {messages.length
             ? messages?.map((message) => {
                 return <Messages key={message._id} {...message} />;
               })
             : null}
-        </FlipMove>
+        </div>
       </ScrollToBottom>
       <Message />
     </div>
